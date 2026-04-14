@@ -10,10 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HStack{
+                Text("Aplicacion de Contactos").bold(true).font(Font.system(.title, design: .rounded)).padding(10).fixedSize()
+                Image(systemName: "person")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                    .padding(10)
+            }
+            Text("Contactos del telefono").foregroundColor(Color.blue)
+            Label("David Pascual Lorenzo", systemImage: "person")
+            Button("Hola") {
+                
+            }
+            
         }
         .padding()
     }
