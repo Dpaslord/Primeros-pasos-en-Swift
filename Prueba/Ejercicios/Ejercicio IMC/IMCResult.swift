@@ -37,7 +37,7 @@ struct InformacionView:View {
     var body: some View {
         VStack{
             let resultado = calcularIMC(altura, peso)
-            Text(String(resultado))
+            Text("\(resultado, specifier: "%.3f")")
                 .bold()
                 .foregroundColor(.white)
         }
