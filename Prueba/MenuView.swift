@@ -45,7 +45,7 @@ struct MenuView: View {
                 }
                 
                 NavigationLink(destination: Calculadora()) {
-                    Text("3. Calculadora")
+                    Text("3. Calculator")
                         .bold()
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -58,8 +58,8 @@ struct MenuView: View {
                         .cornerRadius(10)
                 }
                 
-                NavigationLink(destination: ContentView()) {
-                    Text("4. App 3")
+                NavigationLink(destination: IMCView()) {
+                    Text("4. IMC Calcultator")
                         .bold()
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -85,7 +85,6 @@ struct MenuView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
-                
                 Spacer()
             }
             .padding()

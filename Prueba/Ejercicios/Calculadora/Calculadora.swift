@@ -21,6 +21,7 @@ struct Calculadora: View {
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
                 .multilineTextAlignment(.trailing)
+
             
             // Botones de la calculadora
             VStack(spacing: 15) {
@@ -28,6 +29,7 @@ struct Calculadora: View {
                 HStack {
                     BotonCalc(texto: "Clear", valorMatematico: "Clear", accion: botonPulsado)
                     BotonCalc(texto: "+", valorMatematico: "+", accion: botonPulsado)
+                    
                 }
                 
                 HStack {
