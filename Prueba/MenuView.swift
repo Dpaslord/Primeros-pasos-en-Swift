@@ -29,7 +29,7 @@ struct MenuView: View {
                             TextCard(name: "4. Calculadora de IMC")
                         }
                         
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: SuperheroSearcher()) {
                             TextCard(name: "5. Buscador de Superheroes")
                         }
                     }
