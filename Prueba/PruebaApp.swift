@@ -11,7 +11,7 @@ import SwiftUI
 struct PruebaApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MenuView()
         }
     }
 }

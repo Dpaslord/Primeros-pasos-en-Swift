@@ -4,12 +4,7 @@ struct MenuView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                LinearGradient(
-                    colors: [Color.blue, Color.purple],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-                .ignoresSafeArea()
+                AnimatedBackground()
                 
                 ScrollView {
                     VStack(spacing: 16) {
@@ -31,6 +26,9 @@ struct MenuView: View {
                         
                         NavigationLink(destination: SuperheroSearcher()) {
                             TextCard(name: "5. Buscador de Superheroes")
+                        }
+                        NavigationLink(destination: FavPlaces()) {
+                            TextCard(name: "6. Mapa para guardar lugares favoritos")
                         }
                     }
                     .padding(20)
@@ -72,6 +70,30 @@ struct TextCard: View {
         .foregroundColor(.white)
         .cornerRadius(15)
         .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 4)
+    }
+}
+
+
+struct AnimatedBackground: View {
+    @State private var animate = false
+    
+    var body: some View {
+        ZStack {
+            ZStack {
+                LinearGradient(colors: [.blue, .purple], startPoint: .top, endPoint: .bottom)
+                
+                LinearGradient(colors: [.pink, .cyan], startPoint: .top, endPoint: .bottom)
+                    .opacity(animate ? 1 : 0)
+                
+                LinearGradient(colors: [.black.opacity(0.2), .clear], startPoint: .bottom, endPoint: .top)
+            }
+        }
+        .ignoresSafeArea()
+        .onAppear {
+            withAnimation(.easeInOut(duration: 6).repeatForever(autoreverses: true)) {
+                animate.toggle()
+            }
+        }
     }
 }
 
