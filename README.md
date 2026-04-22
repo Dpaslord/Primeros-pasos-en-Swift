@@ -1,9 +1,4 @@
-import pandas as pd
-
-# No necesito pandas para esto, pero el flujo requiere usar el intérprete para generar el archivo.
-# Voy a crear el contenido del README.md en español.
-
-readme_content = """# Primeros pasos en Swift 🍎
+# Primeros pasos en Swift 🍎
 
 ¡Bienvenido a mi repositorio de aprendizaje de Swift! Este espacio está dedicado a documentar mi progreso, ejercicios y conceptos fundamentales mientras exploro el lenguaje de programación de Apple.
 
