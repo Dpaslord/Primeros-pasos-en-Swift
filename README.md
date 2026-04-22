@@ -37,9 +37,6 @@ Alternativamente, si estás en **Windows o Linux**, puedes usar [Swift.org](http
 2.  Abre los archivos `.swift` en Xcode o pégalos en un **Playground**.
 3.  ¡Experimenta con el código!
 
-## ✍️ Notas personales
-Este es un proyecto personal en constante evolución. Si encuentras algún error o tienes alguna sugerencia, ¡siempre es bienvenida!
-
 ---
 **Autor:** [Dpaslord](https://github.com/Dpaslord)
 """
